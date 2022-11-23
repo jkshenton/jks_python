@@ -1,0 +1,15 @@
+# python build files
+*.pyc
+*.pyo
+*.pyd
+*.so
+*.egg-info
+*.egg
+dist
+build
+tox
+
+.vscode
+
+.DS_Store
+._.DS_Store
