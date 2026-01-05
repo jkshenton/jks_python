@@ -58,7 +58,7 @@ def reorder_atoms(atoms_ref, atoms_to_reorder, check_species=True, tol=0.5):
 
 
     """
-    atoms_to_reorder_new_indicies = []
+    atoms_to_reorder_new_indices = []
     mapping = defaultdict(list)
     # loop over reference atoms
     for i, atom in enumerate(atoms_ref):
@@ -99,7 +99,7 @@ def reorder_atoms(atoms_ref, atoms_to_reorder, check_species=True, tol=0.5):
         if distances[atoms_to_reorder_index] < tol:
             # append to array of new order
             mapping[i] = atoms_to_reorder_index
-            atoms_to_reorder_new_indicies.append(atoms_to_reorder_index)
+            atoms_to_reorder_new_indices.append(atoms_to_reorder_index)
         else:
             # this atom is not in ref, so we don't need to do anything
             pass
